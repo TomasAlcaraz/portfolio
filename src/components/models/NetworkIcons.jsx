@@ -39,8 +39,8 @@ const StyledNetworksImg = styled.img`
   bottom: 1rem;
   cursor: pointer;
   transition: 0.5s ease;
-  &:hover{
-    top: 82vh;
+  &:hover {
+    transform: translateY(-10px);
   }
   @media (max-width: 769px){
     display: none;
@@ -55,8 +55,8 @@ const StyledNetworksImg2 = styled.img`
   bottom: 1rem;
   cursor: pointer;
   transition: 0.5s ease;
-  &:hover{
-    top: 89vh;
+  &:hover {
+    transform: translateY(-10px);
   }
   @media (max-width: 769px){
     display: none;

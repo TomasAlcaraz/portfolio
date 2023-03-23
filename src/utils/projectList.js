@@ -18,8 +18,8 @@ export const projects = [
       "Administración, sumar usuarios a un chat",
     ],
     links: {
-      github: "https://github.com/TomasAlcaraz/VIBE",
-      deploy: "https://proyecto-final-vibes.vercel.app",
+      github: "https://github.com/TomasAlcaraz/chat-app",
+      deploy: "https://chat-7vp2elex8-tomasalcaraz.vercel.app",
     },
     individual: false,
     logo: chatgtpLogo,

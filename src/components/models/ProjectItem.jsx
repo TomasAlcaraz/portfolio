@@ -112,7 +112,6 @@ const StyledProjectTitle = styled.h4`
   img {
     width: 2rem;
   }
-
 `;
 
 const StyledList = styled.div`
@@ -146,13 +145,13 @@ const StyledProjectContent = styled.div`
     margin-top: -9rem;
     width: 100%;
     &:hover {
-      margin-top: -9rem;
+      transform: translateY(-10px);
     }
   }
   transition: 0.3s ease;
   @media (min-width: 769px) {
     &:hover {
-      margin-top: -0.4rem;
+      transform: translateY(-15px);
     }
   }
 `;

@@ -91,10 +91,11 @@ const StyledButton = styled(StyledButtonResume)`
   color: #1a3346;
   border: 1.5px solid #92b7d5;
   border: none;
-  background: #eee;
-  box-shadow: 0 5px 5px -3px lightblue;
+  background: #d0dee4;
   border-radius: 2px;
+  box-shadow: none;
   &:hover {
+    box-shadow: 0 5px 5px -3px lightblue;
     background: #ffffff;
   }
 `;
