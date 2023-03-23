@@ -5,7 +5,7 @@ import theme from "../../styles/theme";
 import github from "../../assets/github.png";
 import deploy from "../../assets/link-icon.png";
 import { NavLink } from "react-router-dom";
-import PopUp from "./Popup";
+import PopUp from "./PopUp";
 import ReactModal from "react-modal";
 import CenterContainer from "../models/CenterContainer";
 
