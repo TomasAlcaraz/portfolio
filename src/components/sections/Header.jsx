@@ -48,7 +48,7 @@ const StyledHeader = styled.div`
   /* padding: 10rem 0rem; */
   padding-top: 10rem;
   @media (max-width: 769px) {
-    padding-top: 4rem;
+    padding-top: 20%;
     font-size: ${theme.fontSizes.smish};
   }
 `;
