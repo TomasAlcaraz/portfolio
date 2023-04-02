@@ -18,7 +18,7 @@ export default function Formation() {
     setSelected(e.target.value);
   }
   return (
-    <StyledFormation>
+    <StyledFormation id="formation">
       <Title text="Formation" number={2} />
       <StyledBox>
         <StyledList>
@@ -96,7 +96,11 @@ const StyledFormation = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
+  padding-top: 14rem;
+  @media (max-width: 769px) {
+    padding-top: 8rem;
+  }
 `;
 
 const StyledBox = styled.div`

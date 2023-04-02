@@ -6,7 +6,7 @@ import { projects } from "../../utils/projectList";
 
 export default function Project() {
   return (
-    <StyledProject>
+    <StyledProject id="projects">
       <Title text="Projects" number={3} />
       <StyledProjectConteiner>
         {projects.map((e, i) => {
@@ -34,6 +34,7 @@ const StyledProject = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  padding-top: 8rem;
   @media (max-width: 769px) {
     gap: 7rem;
   }
@@ -49,4 +50,3 @@ const StyledProjectConteiner = styled.div`
     gap: 11rem;
   }
 `;
-

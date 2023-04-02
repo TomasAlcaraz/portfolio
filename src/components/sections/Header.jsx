@@ -45,7 +45,8 @@ const StyledHeader = styled.div`
   flex-wrap: wrap;
   font-family: ${theme.fonts.SFMono};
   flex-wrap: wrap;
-  padding: 10rem 0rem;
+  /* padding: 10rem 0rem; */
+  padding-top: 10rem;
   @media (max-width: 769px) {
     padding: 1rem 0rem;
     font-size: ${theme.fontSizes.smish};

@@ -13,7 +13,7 @@ export default function Email() {
     "Si te interesa mi perfil estoy abierto a propuestas y encantado de escuchar tu feedback. 😄";
 
   return (
-    <StyledEmail>
+    <StyledEmail id="contact">
       <h4>04. What's Next?</h4>
       <h3>Get In Touch</h3>
       <p>{callToAction}</p>
@@ -39,7 +39,8 @@ const StyledEmail = styled.div`
   margin-top: 5rem;
   margin-bottom: 10rem;
   @media (max-width: 769px) {
-    margin-bottom: 4rem;
+    gap: 4rem;
+    margin-bottom: 8rem;
   }
   h4 {
     font-family: ${theme.fonts.SFMono};

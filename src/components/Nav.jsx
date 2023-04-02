@@ -36,7 +36,6 @@ export default function Nav() {
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
       <StyledNav>
-        {/* <img src={logo} /> */}
         <StyledResume
           to="https://drive.google.com/file/d/1yp2jJxA-Ic1QRZi8Bivg2kRXm2YsQoiM/view?usp=sharing"
           target="_blank"
@@ -46,8 +45,8 @@ export default function Nav() {
         <StyledNavList active={active}>
           {["About", "Formation", "Projects", "Contact"].map((e, i) => {
             return (
-              <StyledNavItem key={i}>
-                0{i + 1}.<button>{e}</button>
+              <StyledNavItem key={i} href={`#${e.toLowerCase()}`}>
+                0{i + 1}.<button onClick={handleActive}>{e}</button>
               </StyledNavItem>
             );
           })}
@@ -184,12 +183,13 @@ const StyledNavList = styled.div`
   }
 `;
 
-const StyledNavItem = styled.div`
+const StyledNavItem = styled.a`
   margin: 0 5px;
   font-family: ${theme.fonts.SFMono};
   font-size: ${theme.fontSizes.smish};
   color: ${theme.colors.lightGreen};
   cursor: pointer;
+  text-decoration: none;
   button {
     border: none;
     cursor: pointer;
