@@ -53,6 +53,9 @@ const StyledAbout = styled.div`
   p {
     font-family: ${theme.fonts.Calibre};
     font-size: ${theme.fontSizes.lg};
+    @media (max-width: 769px) {
+      font-size: ${theme.fontSizes.sm};
+    }
   }
   img {
     width: 16rem;
@@ -66,6 +69,6 @@ const StyledAbout = styled.div`
   @media (max-width: 769px) {
     gap: 2rem;
     flex-wrap: wrap;
-    padding-top: 9rem;
+    padding-top: 8rem;
   }
 `;

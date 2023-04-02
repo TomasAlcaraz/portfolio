@@ -41,7 +41,7 @@ export default function Formation() {
                     heigh: "2rem",
                     borderRadius: "3px",
                     marginRight: "1rem",
-                    pointerEvents: "none"
+                    pointerEvents: "none",
                   }}
                   src={e.name}
                 />
@@ -107,6 +107,7 @@ const StyledBox = styled.div`
   display: flex;
   @media (max-width: 769px) {
     flex-wrap: wrap;
+    font-size: ${theme.fontSizes.sm};
   }
 `;
 

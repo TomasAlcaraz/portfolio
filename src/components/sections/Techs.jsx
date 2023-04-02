@@ -22,7 +22,7 @@ export default function Techs() {
       <StyledTech src={javascript} />
       <StyledTech src={css} />
       <StyledTech src={html} />
-      <StyledTech src={java} />
+      {/* <StyledTech src={java} /> */}
       <StyledTech style={{ width: "1.8rem" }} src={node} />
       <StyledTech src={redux} />
       <StyledTech src={rxjs} />

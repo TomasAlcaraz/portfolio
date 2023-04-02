@@ -44,9 +44,11 @@ const StyledFormationContent = styled.div`
     font-size: ${theme.fontSizes.smish};
   }
   p {
-    /* height: 35vh; */
     color: ${theme.colors.darkGrey};
     font-family: ${theme.fonts.Calibre};
     font-size: ${theme.fontSizes.lg};
+    @media (max-width: 769px) {
+      font-size: ${theme.fontSizes.sm};
+  }
   }
 `;

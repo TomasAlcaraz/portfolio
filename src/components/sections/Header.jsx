@@ -96,7 +96,7 @@ const StyledAboutText = styled.p`
   @media (max-width: 769px) {
     padding-right: 0;
     margin: 1rem 0.5rem;
-    font-size: ${theme.fontSizes.lg};
+    font-size: ${theme.fontSizes.sm};
   }
   /* padding-left: 10rem; */
   display: flex;
