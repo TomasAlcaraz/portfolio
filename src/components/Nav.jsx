@@ -37,7 +37,7 @@ export default function Nav() {
     <div style={{ display: "flex", justifyContent: "center" }}>
       <StyledNav>
         <StyledResume
-          to="https://drive.google.com/file/d/1yp2jJxA-Ic1QRZi8Bivg2kRXm2YsQoiM/view?usp=sharing"
+          to="https://drive.google.com/file/d/1nLPXP0ekf9tlb9H0LlcvtLfI6l6zq1a1/view?usp=sharing"
           target="_blank"
         >
           <StyledButton>CV</StyledButton>
