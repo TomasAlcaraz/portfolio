@@ -11,19 +11,21 @@ import css from "../../assets/css-icon.png";
 import rxjs from "../../assets/rxjs-icon.png";
 import postgres from "../../assets/postgresql-icon.png";
 import mysql from "../../assets/mysql-icon.png";
-import java from "../../assets/java.svg";
+import nest from "../../assets/nestjs.svg";
 import git from "../../assets/git-icon.png";
+import express from "../../assets/express-js.png";
 
 export default function Techs() {
   return (
     <StyledTechsContainer>
+      <StyledTech src={nest} />
       <StyledTech src={react} />
+      <StyledTech src={express} />
       <StyledTech src={typescript} />
       <StyledTech src={javascript} />
+      <StyledTech style={{ width: "1.8rem" }} src={node} />
       <StyledTech src={css} />
       <StyledTech src={html} />
-      {/* <StyledTech src={java} /> */}
-      <StyledTech style={{ width: "1.8rem" }} src={node} />
       <StyledTech src={redux} />
       <StyledTech src={rxjs} />
       <StyledTech style={{ width: "2.4rem" }} src={mongodb} />

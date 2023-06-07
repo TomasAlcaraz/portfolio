@@ -3,7 +3,6 @@ import styled from "styled-components";
 import theme from "../../styles/theme";
 
 export default function Section({ title, techs, description, additional }) {
-  console.log(additional);
   return (
     <StyledFormationContent>
       <h3>{title}</h3>

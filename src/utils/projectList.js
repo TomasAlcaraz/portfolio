@@ -5,26 +5,6 @@ import chatgtpLogo from "@/assets/chatgtp-icon.png";
 
 export const projects = [
   {
-    title: "Chapp",
-    description:
-      "App de chat con inteligencia artificial integrada, puedes elegir entre dos asistentes: uno te respondera normalmente como Chat GTP 3.5, el otro respondera solo en código, así te ahorras el tener que especificarlo.",
-    image: chatApp,
-    techs: ["OpenAI", "React", "Redux", "Redux Toolkit", "Node.js", "Express"],
-    contributions: [
-      "Integración de Chat-GTP 3.5",
-      "IA que responde solo con código",
-      "Agregar distintas IAs a un mismo chat",
-      "Login y autetificación con validaciones",
-      "Administración, sumar usuarios a un chat",
-    ],
-    links: {
-      github: "https://github.com/TomasAlcaraz/chat-app",
-      deploy: "https://chat-7vp2elex8-tomasalcaraz.vercel.app",
-    },
-    individual: false,
-    logo: chatgtpLogo,
-  },
-  {
     title: "Vibe",
     description:
       "Vibe es un e-commerce de ropa que tiene como objetivo servir a las empresas que buscan publicar sus productos con una interfaz bonita, fácil de usar y cómoda para el administrador. Esta aplicación se realizó como proyecto final para el bootcamp: Soy Henry.",
@@ -53,5 +33,25 @@ export const projects = [
     },
     individual: false,
     logo: vibeLogo,
+  },
+  {
+    title: "Chat App",
+    description:
+      "App de chat con inteligencia artificial integrada, puedes elegir entre dos asistentes: uno te respondera normalmente como Chat GTP 3.5, el otro respondera solo en código, así te ahorras el tener que especificarlo.",
+    image: chatApp,
+    techs: ["OpenAI", "React", "Redux", "Redux Toolkit", "Node.js", "Express"],
+    contributions: [
+      "Integración de Chat-GTP 3.5",
+      "IA que responde solo con código",
+      "Agregar distintas IAs a un mismo chat",
+      "Login y autetificación con validaciones",
+      "Administración, sumar usuarios a un chat",
+    ],
+    links: {
+      github: "https://github.com/TomasAlcaraz/chat-app",
+      deploy: "none",
+    },
+    individual: false,
+    logo: chatgtpLogo,
   },
 ];

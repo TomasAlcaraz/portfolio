@@ -40,13 +40,15 @@ export default function ProjectItem({
               alt="github"
             />
           </NavLink>
-          <NavLink to={links.deploy} target="_blank">
-            <img
-              src={deploy}
-              style={{ width: "1.8rem", height: "1.8rem" }}
-              alt="deploy"
-            />
-          </NavLink>
+          {links.deploy !== "none" ? (
+            <NavLink to={links.deploy} target="_blank">
+              <img
+                src={deploy}
+                style={{ width: "1.8rem", height: "1.8rem" }}
+                alt="deploy"
+              />
+            </NavLink>
+          ) : null}
         </StyledIcons>
         <div
           style={{ position: "absolute", bottom: "0.8rem", background: "none" }}

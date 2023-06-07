@@ -48,7 +48,7 @@ const StyledAbout = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding-top: 17rem;
+  padding-top: 20%;
   font-family: ${theme.fonts.SFMono};
   p {
     font-family: ${theme.fonts.Calibre};
@@ -69,6 +69,6 @@ const StyledAbout = styled.div`
   @media (max-width: 769px) {
     gap: 2rem;
     flex-wrap: wrap;
-    padding-top: 8rem;
+    padding-top: 30%;
   }
 `;

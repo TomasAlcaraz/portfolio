@@ -37,13 +37,13 @@ export default function Nav() {
     <div style={{ display: "flex", justifyContent: "center" }}>
       <StyledNav>
         <StyledResume
-          to="https://drive.google.com/file/d/1VB4sEfWfP1MKEmAZxG1wrUo-NRGbvNeQ/view?usp=sharing"
+          to="https://drive.google.com/file/d/1eZqOJBIQxqnRNx6pK-JObJJwUl69bdgB/view?usp=sharing"
           target="_blank"
         >
           <StyledButton>CV</StyledButton>
         </StyledResume>
         <StyledNavList active={active}>
-          {["About", "Formation", "Projects", "Contact"].map((e, i) => {
+          {["About", "Experience", "Projects", "Contact"].map((e, i) => {
             return (
               <StyledNavItem key={i} href={`#${e.toLowerCase()}`}>
                 0{i + 1}.<button onClick={handleActive}>{e}</button>

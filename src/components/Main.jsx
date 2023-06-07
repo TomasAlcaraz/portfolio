@@ -9,6 +9,7 @@ import Email from "./sections/Email";
 import Footer from "./sections/Footer";
 import Techs from "./sections/Techs";
 import NetworkIconos from "./models/NetworkIcons";
+import Experiencie from "./sections/Experiencie";
 
 export default function Main() {
   return (
@@ -18,6 +19,7 @@ export default function Main() {
         <Header />
         <About />
         <Techs />
+        <Experiencie />
         <Formation />
         <Project />
         <Email />

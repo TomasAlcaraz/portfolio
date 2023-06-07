@@ -97,10 +97,7 @@ const StyledFormation = styled.div`
   justify-content: center;
   flex-direction: column;
   /* margin-top: 5rem; */
-  padding-top: 14rem;
-  @media (max-width: 769px) {
-    padding-top: 8rem;
-  }
+  padding-top: 20%;
 `;
 
 const StyledBox = styled.div`

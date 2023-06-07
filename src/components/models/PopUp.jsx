@@ -26,8 +26,8 @@ export default function PopUp({ contributions, individual }) {
             : "Algunos de mis aportes fueron:"}
         </span>
         <StyledPonits>
-          {contributions.map((e) => {
-            return <li>{e}</li>;
+          {contributions.map((e, i) => {
+            return <li key={i}>{e}</li>;
           })}
         </StyledPonits>
         <div style={{ display: "flex", justifyContent: "center" }}>
