@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import styled from "styled-components";
 import theme from "../../styles/theme";
 import StyledButtonResume from "../../styles/button";
@@ -41,7 +41,6 @@ const StyledHeader = styled.div`
   flex-wrap: wrap;
   font-family: ${theme.fonts.SFMono};
   flex-wrap: wrap;
-  /* padding: 10rem 0rem; */
   padding-top: 10rem;
   @media (max-width: 769px) {
     padding-top: 20%;

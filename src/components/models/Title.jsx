@@ -33,7 +33,7 @@ const StyledAboutHeader = styled.div`
   &::after {
     content: "";
     display: block;
-    height: 1px;
+    height: 2px;
     width: 20%;
     background-color: rgb(48, 60, 85);
     position: relative;
