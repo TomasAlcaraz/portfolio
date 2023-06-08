@@ -14,12 +14,8 @@ export default function Header() {
       </StyledCoreTitle>
 
       <StyledAboutText>
-        Soy un entusiasta de la tecnología y amante de las buenas prácticas, he
-        desarrollado apps de punta a punta partiendo del modelado de base de
-        datos hasta la estilización del frontend.
+        Soy un entusiasta de la tecnología y amante de las buenas prácticas, al servicio de la comunidad y con motivación de crecer cada día.
         <br />
-        <br />
-        Estoy en búsqueda de un sitio donde explotar al máximo mis capacidades.
       </StyledAboutText>
       <div style={{ height: "3rem" }}>
         <Transition

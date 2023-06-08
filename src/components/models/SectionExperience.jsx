@@ -46,12 +46,11 @@ const StyledExperienceBox = styled.div`
 const StyledExperienceList = styled.ul`
   display: flex;
   flex-direction: column;
-  max-width: 20rem;
-  color: ${theme.colors.grey};
-  /* font-family: ${theme.fonts.Calibre}; */
+  max-width: 30rem;
+  color: ${theme.colors.darkGrey};
   font-family: ${theme.fonts.Calibre};
   font-size: ${theme.fontSizes.md};
-  gap: 1.2rem;
+  gap: 0.6rem;
 `;
 
 const StyledExperienceContent = styled.div`

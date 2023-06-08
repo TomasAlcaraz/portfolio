@@ -49,7 +49,7 @@ export default function Experience() {
 }
 
 const StyledExperience = styled.div`
-  padding-top: 15%;
+  padding-top: 18%;
   @media (max-width: 769px) {
     padding-top: 30%;
   }

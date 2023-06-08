@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import theme from "../styles/theme";
-import logo from "../assets/logo-taa-2.png";
+import logo from "../assets/vibe-icon.png";
 import StyledButtonResume from "../styles/button";
 import "./Nav.css";
 import { NavLink } from "react-router-dom";
@@ -36,12 +36,7 @@ export default function Nav() {
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
       <StyledNav>
-        <StyledResume
-          to="https://drive.google.com/file/d/1eZqOJBIQxqnRNx6pK-JObJJwUl69bdgB/view?usp=sharing"
-          target="_blank"
-        >
-          <StyledButton>CV</StyledButton>
-        </StyledResume>
+        <img src={logo} style={{ width: "2rem", height: "2rem" }} />
         <StyledNavList active={active}>
           {["About", "Experience", "Projects", "Contact"].map((e, i) => {
             return (
@@ -50,6 +45,12 @@ export default function Nav() {
               </StyledNavItem>
             );
           })}
+          <StyledResume
+            to="https://drive.google.com/file/d/1eZqOJBIQxqnRNx6pK-JObJJwUl69bdgB/view?usp=sharing"
+            target="_blank"
+          >
+            <StyledButton>CV</StyledButton>
+          </StyledResume>
         </StyledNavList>
         <StyledHamburger
           className={`icon nav-icon-5 ${active ? "open active" : ""}`}
@@ -103,7 +104,6 @@ const StyledResume = styled(NavLink)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding-left: 2.4rem;
   StyledButtonResume {
     border: none;
   }

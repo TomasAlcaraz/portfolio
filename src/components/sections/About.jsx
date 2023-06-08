@@ -12,18 +12,13 @@ export default function About() {
       <div>
         <Title text="About Me" number={1} />
         <p>
-          Soy un joven apasionado por la tecnología y la programación, motivado
-          por la creación de soluciones innovadoras que resuelvan problemas
-          complejos.
+          Soy un joven apasionado por la tecnología, especialista en el desarrollo y mantenimiento de aplicaciones web, cuento con excepcionales dotes comunicativos que se reflejan en mi experiencia como líder técnico de proyectos.
           <br />
           <br />
-          Tengo sólidos conocimientos en React, TypeScript, JavaScript, HTML,
-          CSS, y estoy comprometido a mejorar mis habilidades todos los días.
+          Tengo sólidos conocimientos en Nest, Express, Node, Next, React, TypeScript y JavaScript.
           <br />
           <br />
-          Con una mente abierta, actitud positiva y una fuerte motivación para
-          aprender nuevas habilidades; estoy listo para poner mi creatividad al
-          servicio de quién ofrezca un sitio donde explotar todo mi potencial.
+          Con una mente abierta, actitud positiva y una fuerte motivación por seguir formandome en este rubro.
         </p>
       </div>
       <CenterContainer
@@ -48,7 +43,7 @@ const StyledAbout = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding-top: 20%;
+  padding-top: 23%;
   font-family: ${theme.fonts.SFMono};
   p {
     font-family: ${theme.fonts.Calibre};
