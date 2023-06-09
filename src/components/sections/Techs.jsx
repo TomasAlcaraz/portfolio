@@ -57,10 +57,6 @@ export default function Techs() {
         <h4>HTML</h4>
       </StyledBox>
       <StyledBox>
-        <StyledTech src={css} />
-        <h4>CSS</h4>
-      </StyledBox>
-      <StyledBox>
         <StyledTech src={redux} />
         <h4>Redux</h4>
       </StyledBox>
