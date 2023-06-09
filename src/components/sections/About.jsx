@@ -62,7 +62,7 @@ const StyledAbout = styled.div`
   font-size: ${theme.fontSizes.sm};
   /* content: '▹'; */
   @media (max-width: 769px) {
-    gap: 1rem;
+    gap: 2rem;
     flex-wrap: wrap;
     padding-top: 20%;
   }
