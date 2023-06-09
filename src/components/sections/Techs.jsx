@@ -22,9 +22,9 @@ export default function Techs() {
       <StyledTech src={nest} />
       <StyledTech src={react} />
       <StyledTech src={express} />
-      <StyledTech src={aws} />
       <StyledTech src={typescript} />
       <StyledTech src={javascript} />
+      <StyledTech src={aws} />
       <StyledTech style={{ width: "1.8rem" }} src={node} />
       <StyledTech src={css} />
       <StyledTech src={html} />
@@ -45,7 +45,6 @@ const StyledTechsContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  /* height: 12rem; */
 `;
 
 const StyledTech = styled.img`
