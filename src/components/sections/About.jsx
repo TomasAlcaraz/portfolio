@@ -64,6 +64,5 @@ const StyledAbout = styled.div`
   @media (max-width: 769px) {
     gap: 2rem;
     flex-wrap: wrap;
-    padding-top: 30%;
   }
 `;
