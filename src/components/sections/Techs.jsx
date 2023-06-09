@@ -14,6 +14,7 @@ import mysql from "../../assets/mysql-icon.png";
 import nest from "../../assets/nestjs.svg";
 import git from "../../assets/git-icon.png";
 import express from "../../assets/express-js.png";
+import aws from "../../assets/aws.png";
 
 export default function Techs() {
   return (
@@ -21,6 +22,7 @@ export default function Techs() {
       <StyledTech src={nest} />
       <StyledTech src={react} />
       <StyledTech src={express} />
+      <StyledTech src={aws} />
       <StyledTech src={typescript} />
       <StyledTech src={javascript} />
       <StyledTech style={{ width: "1.8rem" }} src={node} />
@@ -32,6 +34,7 @@ export default function Techs() {
       <StyledTech src={postgres} />
       <StyledTech src={mysql} />
       <StyledTech src={git} />
+     
     </StyledTechsContainer>
   );
 }
