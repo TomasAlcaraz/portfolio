@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   scroll-behavior: smooth;
@@ -20,6 +20,15 @@
 /**
  * Remove the margin in all browsers.
  */
+
+@font-face {
+  font-family: "Calibre";
+  src: url("fonts/Calibre/Calibre-Light.woff2") format("woff2");
+  font-family: "SF Mono";
+  src: url("fonts/SFMono/SFMono-Medium.woff2") format("woff2");
+  /* Agrega aquí más formatos de fuente si los tienes disponibles */
+  /* Puedes especificar diferentes formatos para mayor compatibilidad entre navegadores */
+}
 
 body {
   margin: 0;
@@ -176,7 +185,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -186,7 +196,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 

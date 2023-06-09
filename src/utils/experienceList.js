@@ -14,7 +14,7 @@ import mysql from "@/assets/mysql-icon.png";
 import nest from "@/assets/nestjs.svg";
 import git from "@/assets/git-icon.png";
 import express from "@/assets/express-js.png";
-import aws from "@/assets/aws.png"
+import aws from "@/assets/aws.png";
 
 export const experience = [
   {
@@ -23,6 +23,8 @@ export const experience = [
     company: {
       name: "Devocamp",
       image: devocamp,
+      linkedin:
+        "https://www.linkedin.com/company/devocapm/?trk=public_profile_experience-item_profile-section-card_image-click&originalSubdomain=ar",
     },
     achievements: [
       "Trabajé en conjunto con el tech lead al diseñar la infrastructura de la empresa.",
@@ -38,6 +40,7 @@ export const experience = [
     company: {
       name: "SoyHenry",
       image: soyhenry,
+      linkedin: "https://www.linkedin.com/school/henryok/",
     },
     achievements: [
       "Lideré mi equipo de desarrollo mejorando un 40% la productividad de los sprints.",

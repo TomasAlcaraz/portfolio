@@ -7,14 +7,17 @@ import Transition from "../models/Transition";
 export default function Header() {
   return (
     <StyledHeader>
-      <StyledTitle>Hola, mi nombre es</StyledTitle>
-      <StyledNameTitle>Tomás Alcaraz.</StyledNameTitle>
-      <StyledCoreTitle style={{ color: theme.colors.darkGrey }}>
-        full stack developer
-      </StyledCoreTitle>
+      <div>
+        <StyledTitle>Hola, mi nombre es</StyledTitle>
+        <StyledNameTitle>Tomás Alcaraz.</StyledNameTitle>
+        <StyledCoreTitle style={{ color: theme.colors.darkGrey }}>
+          full stack developer
+        </StyledCoreTitle>
+      </div>
 
       <StyledAboutText>
-        Soy un entusiasta de la tecnología y amante de las buenas prácticas, al servicio de la comunidad y con motivación de crecer cada día.
+        Soy un entusiasta de la tecnología y amante de las buenas prácticas, al
+        servicio de la comunidad y con motivación de crecer cada día.
         <br />
       </StyledAboutText>
       <div style={{ height: "3rem" }}>
@@ -45,6 +48,7 @@ const StyledHeader = styled.div`
   @media (max-width: 769px) {
     padding-top: 20%;
     font-size: ${theme.fontSizes.smish};
+    gap: 3rem;
   }
 `;
 

@@ -19,36 +19,38 @@ export default function Formation() {
   }
   return (
     <StyledFormation id="formation">
-      <Title text="Formation" number={2} />
+      <Title text="Formation" />
       <StyledBox>
         <StyledList>
-          {[
-            { name: soyhenry, title: "SoyHenry" },
-            { name: oracle, title: "Oracle ONE" },
-            { name: argentinaprograma, title: "Argentina Programa" },
-          ].map((e, i) => {
-            return (
-              <StyledItem
-                active={tag === e.title ? true : false}
-                name={e.title}
-                onClick={(e) => hanldeSet(e)}
-                key={i}
-                value={i}
-              >
-                <img
-                  style={{
-                    width: "2rem",
-                    heigh: "2rem",
-                    borderRadius: "3px",
-                    marginRight: "1rem",
-                    pointerEvents: "none",
-                  }}
-                  src={e.name}
-                />
-                {e.title}
-              </StyledItem>
-            );
-          })}
+          <div style={{width: "20rem"}}>
+            {[
+              { name: soyhenry, title: "SoyHenry" },
+              { name: oracle, title: "Oracle ONE" },
+              { name: argentinaprograma, title: "Argentina Programa" },
+            ].map((e, i) => {
+              return (
+                <StyledItem
+                  active={tag === e.title ? true : false}
+                  name={e.title}
+                  onClick={(e) => hanldeSet(e)}
+                  key={i}
+                  value={i}
+                >
+                  <img
+                    style={{
+                      width: "2rem",
+                      heigh: "2rem",
+                      borderRadius: "3px",
+                      marginRight: "1rem",
+                      pointerEvents: "none",
+                    }}
+                    src={e.name}
+                  />
+                  {e.title}
+                </StyledItem>
+              );
+            })}
+          </div>
           <StyledCertificate
             to={formations[selected]?.certificate.link}
             target="_blank"
@@ -73,8 +75,7 @@ export default function Formation() {
 }
 
 const StyledCertificate = styled(NavLink)`
-  margin-top: 2rem;
-  margin-left: 2.5rem;
+  margin-top: 3rem;
   position: relative;
   .link {
     position: absolute;
@@ -83,8 +84,8 @@ const StyledCertificate = styled(NavLink)`
   }
   .certificate {
     width: 14rem;
-    border-radius: 5px;
-    transition: 1s ease;
+    border-radius: 2px;
+    transition: 2s ease;
     filter: brightness(0.4);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -112,12 +113,14 @@ const StyledList = styled.div`
   width: 25rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: aliceblue;
   list-style: none;
   padding-right: 2rem;
 `;
 
 const StyledItem = styled.button`
+  width: 100%;
   cursor: pointer;
   background: none;
   background-color: ${(props) => (props.active ? "rgb(48, 60, 85)" : null)};

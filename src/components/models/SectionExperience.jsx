@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import theme from "../../styles/theme";
+import link from "@/assets/linkedin-icon.png";
 
 export default function SectionExperience({
   title,
@@ -19,13 +20,30 @@ export default function SectionExperience({
             })
           : null}
       </StyledTechs>
+
       <StyledExperienceBox>
         <img
           src={company.image}
-          style={{ width: "1.8rem", height: "1.8rem", borderRadius: "2px" }}
+          style={{
+            width: "1.8rem",
+            height: "1.8rem",
+            borderRadius: "2px",
+          }}
         />
         <h5>{company.name}</h5>
+        <a
+          href={company.linkedin}
+          target="_blank"
+          style={{ textDecoration: "none" }}
+        >
+          <img
+            src={link}
+            className="link"
+            style={{ width: "1.5rem", height: "1.5rem" }}
+          />
+        </a>
       </StyledExperienceBox>
+
       <StyledExperienceList>
         {achievements.length
           ? achievements.map((e, i) => {
@@ -40,7 +58,13 @@ export default function SectionExperience({
 const StyledExperienceBox = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1.5rem;
+  height: 3rem;
+  max-width: 32rem;
+  border-radius: 2px;
+  padding: 0.5rem;
+  margin: 0.5rem;
 `;
 
 const StyledExperienceList = styled.ul`

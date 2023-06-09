@@ -45,7 +45,7 @@ const StyledFormationContent = styled.div`
   p {
     color: ${theme.colors.darkGrey};
     font-family: ${theme.fonts.Calibre};
-    font-size: ${theme.fontSizes.lg};
+    font-size: ${theme.fontSizes.md};
     @media (max-width: 769px) {
       font-size: ${theme.fontSizes.sm};
   }

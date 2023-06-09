@@ -5,7 +5,7 @@ import theme from "../../styles/theme";
 export default function Title({ text, number }) {
   return (
     <StyledAboutHeader>
-      <h4>0{number}.</h4> <h3>{text}</h3>
+      {number ? <h4>0{number}.</h4> : null} <h3>{text}</h3>
     </StyledAboutHeader>
   );
 }
@@ -19,7 +19,7 @@ const StyledAboutHeader = styled.div`
     font-family: ${theme.fonts.Calibre};
     font-size: ${theme.fontSizes.h3};
     color: ${theme.colors.grey};
-    @media (max-width: 769px){
+    @media (max-width: 769px) {
       width: 6rem;
       font-size: ${theme.fontSizes.xxl};
     }
@@ -39,7 +39,7 @@ const StyledAboutHeader = styled.div`
     position: relative;
     top: -5px;
     z-index: -1;
-    @media (max-width: 769px){
+    @media (max-width: 769px) {
       width: 100%;
     }
   }
