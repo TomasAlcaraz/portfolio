@@ -34,7 +34,7 @@ const StyledProject = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding-top: 10%;
+  padding-top: 15%;
   @media (max-width: 769px) {
     gap: 7rem;
   }
